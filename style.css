@@ -61,3 +61,11 @@ body {
     right: 0%;
     top: 56px;
 }
+
+.squares_table .minus_row {
+    left: 0%;
+}
+
+.squares_table .minus_column {
+    top: 0%;
+}
