@@ -1,0 +1,14 @@
+{
+  "name": "test-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "author": "George Tushinsky",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
