@@ -7,6 +7,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 52px;
+    margin: 2px;
     font-family: sans-serif;
 }
 
