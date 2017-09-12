@@ -5,42 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test-table</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/webcomponents.js/webcomponents.min.js"></script>
+    <link rel="import" href="components/squares-table.comp.html">
 </head>
 <body>
-    <div class="squares_table">
-        <button class="button plus_row">+</button>
-        <button class="button plus_column">+</button>
-        <button class="button minus_row">-</button>
-        <button class="button minus_column">-</button>
-        <table class="table">
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-
-    <script src="script.js"></script>
+    <squares-table></squares-table>
+    <squares-table></squares-table>
 </body>
 </html>
