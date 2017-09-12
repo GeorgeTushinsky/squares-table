@@ -96,10 +96,10 @@
                 minusRowButt = sTable.querySelector(".minus_row"),
                 minusColButt = sTable.querySelector(".minus_column"),
                 border = 2;
-
+            
             sTable.addEventListener("mouseover", function(){
-                clearTimeout(this.fadeOutTimer);
                 if(event.target.tagName == "TD" || event.target.tagName == "BUTTON"){
+                    clearTimeout(this.fadeOutTimer);
                     if(event.target.tagName == "TD"){
                         //change minus buttons position compared to selected cell and row
                         minusRowButt.style.top = event.target.offsetTop + event.target.offsetHeight + border + "px";
@@ -112,13 +112,12 @@
             sTable.addEventListener("mouseout", function(){
                 if(event.target.tagName == "TD" || event.target.tagName == "BUTTON"){
                     //hide minus buttons after 200ms if cursor is out from the table or buttons
-                    this.fadeOutTimer = setInterval(function(){
+                    this.fadeOutTimer = setTimeout(function(){
                         minusColButt.style.visibility = "hidden";
                         minusRowButt.style.visibility = "hidden";
                     }, 200);
                 }
             }, true);
-
             sTable.addEventListener("click", function(){
                 if(event.target.className == minusRowButt.className){
                     table.deleteRow(-1);
